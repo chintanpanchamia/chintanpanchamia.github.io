@@ -9,49 +9,62 @@
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <!--<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">-->
+    <script src="https://use.fontawesome.com/ae70af9fe5.js"></script>
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+
+
     <link href="css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300" rel="stylesheet">
 </head>
 
 <body>
-    <div id="mobile-menu-open" class="shadow-large">
-        <i class="fa fa-bars" aria-hidden="true"></i>
-    </div>
-    <!-- End #mobile-menu-toggle -->
-    <header>
-        <div id="mobile-menu-close">
-            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
-        </div>
-        <ul id="menu" class="shadow">
-            <li>
-                <a href="#about">About</a>
-            </li>
-            <li>
-                <a href="#experience">Experience</a>
-            </li>
-            <li>
-                <a href="#education">Education</a>
-            </li>
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
-            <li>
-                <a href="#skills">Skills</a>
-            </li>
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
-        </ul>
-    </header>
-    <!-- End header -->
 
+    <!-- End #mobile-menu-toggle -->
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+
+                    <li><a href="#education">EDUCATION</a></li>
+                    <li><a href="#skills">SKILLS</a></li>
+                    <li><a href="#timeLine">TIMELINE</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--</header>-->
     <div id="lead">
         <div id="lead-content">
-            <h1>Ryan Fitzgerald</h1>
-            <h2>Software Engineer</h2>
-            <a href="#" class="btn-rounded-white">Download Resume</a>
+            <!--<div id="namePanel" class="row">-->
+
+            <div id="photo" class="photo"></div>
+            <span class="titleStyle">
+                <h1>Chintan</h1>
+                    <div style="padding: 0.25em;"></div>
+                    <h1>Panchamia</h1>
+                <hr>
+                <h2>Code<span style="color: black;">/</span>Art</h2>
+            </span>
+
+            <!--</div>-->
+            <a href="res/Resume_Chintan_Panchamia.pdf" target="_blank" class="btn-rounded-white">Download Resume</a>
         </div>
+
         <!-- End #lead-content -->
 
         <div id="lead-overlay"></div>
@@ -69,13 +82,24 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <h2 class="heading">About Me</h2>
+                    <h2 class="heading titleStyle">About Me</h2>
                 </div>
                 <div class="col-md-8">
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat. Donec
-                        eu vehicula neque. Donec viverra lorem nunc, tempus euismod eros sollicitudin ut. Quisque et tincidunt libero. Donec id pharetra justo. Proin euismod lacinia dolor, eu scelerisque justo tempus pharetra. Vivamus nunc justo, finibus
-                        ut nisl sed, euismod rhoncus nulla. Proin sed magna egestas, egestas ante et, congue eros. In consequat, mauris dapibus tincidunt suscipit, ex libero aliquet diam, at maximus risus enim non leo.
+                        I am a graduate engineer, with a Master's Degree in Computer Science. I love tinkering with
+                        new technologies, and reading about technological advancements happening around the world.
+                        Specifically those related to Human Computer Interaction, and Machine Learning in the Software Industry.
+                        I am well versed in a few Object Oriented and Scripting languages. I enjoy studying the Web and pondering
+                        over the possibilities that are yet to be uncovered in the same.
+                    </p>
+                    <p>
+                        My non-technical pleasures include reading (mainly Sci-Fi, short stories and poetry), writing (the same categories),
+                        sketching (portraits, anatomical concepts), and designing (UI mocks for the web and phones). You can connect with me
+                        on my social profiles (links at the bottom).
+                    </p>
+                    <p>
+                        My personal motto is <i>Per Aspera, Ad Astra</i>, and I try my best to live by these words. Although, I do complain
+                        sometimes.
                     </p>
                 </div>
             </div>
@@ -83,145 +107,470 @@
     </div>
     <!-- End #about -->
 
-    <div id="experience" class="background-alt">
-        <h2 class="heading">Experience</h2>
-        <div id="experience-timeline">
-            <div data-date="September 2015 – September 2016">
-                <h3>Employer Name</h3>
-                <h4>Job Title</h4>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-                </p>
-            </div>
-
-            <div data-date="September 2015 – September 2016">
-                <h3>Employer Name</h3>
-                <h4>Job Title</h4>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-                </p>
-            </div>
-
-            <div data-date="September 2015 – September 2016">
-                <h3>Employer Name</h3>
-                <h4>Job Title</h4>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-                </p>
-            </div>
-        </div>
-    </div>
-    <!-- End #experience -->
-
-    <div id="education">
-        <h2 class="heading">Education</h2>
-        <div class="education-block">
-            <h3>University of Ottawa</h3>
-            <span class="education-date">Sept 2016 - Sept 2017</span>
-            <h4>Bachelor of Science in Computer Science</h4>
+    <div id="education" class="background-alt">
+        <h2 class="heading titleStyle">Education</h2>
+        <div class="education-block" style="background: #fff;">
+            <h3>North Carolina State University</h3>
+            <span class="education-date">Aug 2015 - May 2017</span>
+            <h4>Master of Computer Science, CGPA: 3.48</h4>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                <ul>
+                    <li>Successfully graduated Cum Laude, after starting out in the first semester with a 2.89, and then ramping up to consecutive 4.0s.</li>
+                    <li>Courses undertaken and eventually aced comprise of core topics like Algorithms, Databases, Machine Learning, Game Development and User Experience.</li>
+                </ul>
             </p>
         </div>
         <!-- End .education-block -->
 
-        <div class="education-block">
-            <h3>University of Ottawa</h3>
-            <span class="education-date">Sept 2016 - Sept 2017</span>
-            <h4>Bachelor of Science in Computer Science</h4>
-            <ul>
-                <li>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </li>
-                <li>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </li>
-                <li>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </li>
-            </ul>
+        <div class="education-block" style="background: #fff;">
+            <h3>University of Mumbai</h3>
+            <span class="education-date">Aug 2011 - May 2015</span>
+            <h4>Bachelor of Science in Computer Engineering, First Class</h4>
+            <p>
+                <ul>
+                    <li>Successfully graduated First Class, with a consistent average over 4 years.</li>
+                    <li>Coursework undertaken covered all topics of fundamental Computer Science,
+                    at least superficially if not in depth. Courses also included basics of Logic, Electronics and simple Mechanics.</li>
+                </ul>
+            </p>
         </div>
         <!-- End .education-block -->
     </div>
     <!-- End #education -->
 
-    <div id="projects" class="background-alt">
-        <h2 class="heading">Projects</h2>
-        <div class="container">
-            <div class="row">
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project.jpg" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Project Name Here</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-                        </p>
-                        <a href="#">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
+    <div id="skills">
+        <h2 class="heading titleStyle">Skills</h2>
+        <div class="row skillPanel">
+            <div class="col-md-3 skillTitle titleStyle">
+                Languages
+            </div>
+            <div class="col-md-9 skillTiles">
+                <ul>
+                    <li>Java</li>
+                    <li>Python</li>
+                    <li>JavaScript</li>
 
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project.jpg" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Project Name Here</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-                        </p>
-                        <a href="#">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
+                    <li>MySql</li>
+                    <li>Node.js</li>
+
+                    <li>C++</li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="row skillPanel">
+            <div class="col-md-3 skillTitle titleStyle">
+                Frameworks
+            </div>
+            <div class="col-md-9 skillTiles">
+                <ul>
+                    <li>Bootstrap</li>
+                    <li>Apache Spark</li>
+                    <li>Django</li>
+
+                    <li>Angular</li>
+                    <li>Knockout</li>
+                    <li>Processing</li>
+                    <li>Botkit</li>
+                    <li>Selenium</li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="row skillPanel">
+            <div class="col-md-3 skillTitle titleStyle">
+                Tools
+            </div>
+            <div class="col-md-9 skillTiles">
+                <ul>
+                    <li>Vagrant</li>
+                    <li>Ansible Playbook</li>
+                    <li>Docker</li>
+                    <li>AWS</li>
+
+                    <li>Adobe Photoshop</li>
+                    <li>Android Studio</li>
+                    <li>Eclipse</li>
+                    <li>Netbeans</li>
+
+                </ul>
             </div>
         </div>
     </div>
-    <!-- End #projects -->
-
-    <div id="skills">
-        <h2 class="heading">Skills</h2>
-        <ul>
-            <li>JavaScript</li>
-            <li>Python</li>
-            <li>Ruby</li>
-            <li>Go</li>
-            <li>Node.js</li>
-            <li>AngularJs</li>
-            <li>React</li>
-            <li>Elixir</li>
-            <li>Java</li>
-            <li>C</li>
-            <li>C#</li>
-            <li>C++</li>
-            <li>Ruby on Rails</li>
-            <li>JavaScript</li>
-            <li>Python</li>
-            <li>Ruby</li>
-            <li>Go</li>
-            <li>Node.js</li>
-            <li>AngularJs</li>
-            <li>React</li>
-            <li>Elixir</li>
-            <li>Java</li>
-            <li>C</li>
-            <li>C#</li>
-            <li>C++</li>
-            <li>Ruby on Rails</li>
-        </ul>
-    </div>
     <!-- End #skills -->
+
+
+    <!--Experience Timeline-->
+    <div id="timeLine" class="background-alt">
+        <div class="container">
+            <h2 class="heading titleStyle">My Timeline</h2>
+            <ul class="timeline">
+                <li>
+                    <div class="timestamp"><span class="time-badge">MAY-2017</span></div>
+                </li>
+                <li>
+                    <div class="timeline-badge main"><i class="fa fa-graduation-cap" aria-hidden="true"></i></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <span class="timeline-title">Master's Degree</span>
+                            <p><small class="text-muted"><i class="glyphicon glyphicon-calendar"></i>   May 11, 2017</small></p>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Graduated with a CGPA of 3.48</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-badge main"><i class="fa fa-check" aria-hidden="true"></i></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <span class="timeline-title">Spring 2017 Semester</span>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Graduated with a GPA of 4.0</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="timestamp"><span class="time-badge">APR-2017</span></div>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-badge main"><i class="fa fa-code"></i></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <span class="timeline-title">WolfClock</span>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Built an AI system that comprises of a clique of Wolves. Each tries to be a part of the pack and follows the one they deem worthy.
+                                They all have individual perception radii and their own speeds for traveling the landscape.</p>
+                            <p>A Java application made with the help of Processing, a framework for geometry based animation. WolfClock was mainly made to adorn the
+                            digital visualization wall at James B. Hunt Jr. Library on campus at NCSU.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="timestamp"><span class="time-badge">DEC-2016</span></div>
+                </li>
+                <li>
+                    <div class="timeline-badge main"><i class="fa fa-check"></i></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <span class="timeline-title">Fall 2016 Semester</span>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Graduated with a GPA of 4.0</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="timestamp"><span class="time-badge">SEP-2016 / NOV-2016</span></div>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-badge main"><i class="fa fa-code"></i></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <span class="timeline-title">Frogger</span>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Built a 3D implementation of the Arcade classic to understand how Computer Graphics are rendered.
+                            This was an extensive exercise in JavaScript-based application development, and understanding how to
+                            optimize GPU workload.</p>
+                            <p>Frogger was made using Three.js a popular framework for developing graphics on the web for applications
+                            and games alike.</p>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="timeline-badge main"><i class="fa fa-user-plus"></i></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <span class="timeline-title">Independent Research</span>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Assisted Dr. Robert St. Amant, in conducting research on Design Principles for handheld and mobile devices.</p>
+                            <p>Study included understanding Finite State Machines in a deeper sense and finding optimizations.
+                            Implementation work involved writing formal chapters on the findings and designing an integrated web-based book.</p>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="timeline-inverted">
+                    <div class="timeline-badge main"><i class="fa fa-code"></i></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <span class="timeline-title">DockerBot</span>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Built a Slack-Bot using the BotKit framework. Designed using Node.</p>
+                            <p>DockerBot can take a GitHub repository URL and setup the environment and the project in a development
+                            environment on an instance running on AWS. It then generates a Docker file for the same and links the user to
+                            it.</p>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="timestamp"><span class="time-badge">JUN-2016 / AUG-2016</span></div>
+                </li>
+
+                <li>
+                    <div class="timeline-badge main"><i class="fa fa-building"></i></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <span class="timeline-title">SDE Intern, Jacobs Engineering</span>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Interned with the Innovation Council for Cyber-Security.</p>
+                            <p>Configured and deployed an OpenStack system to manage all Development Projects for the division.
+                            Integrated the same with a private portal designed in Django. To serve as a way of managing access and
+                            updating permissions on finances and committee approval.</p>
+                            <p>Added functionality by setting up a locally connected GitLab and OpenProject services for
+                                thorough project management. Conducted UX activities to come up with the best portal design for
+                            employees of the division.</p>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="timeline-badge main"><i class="fa fa-code"></i></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <span class="timeline-title">Placeholder Portfolio</span>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Made a stand-in page designed to temporarily describe your work.</p>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="timestamp"><span class="time-badge">MAY-2016</span></div>
+                </li>
+
+                <li>
+                    <div class="timeline-badge main"><i class="fa fa-check"></i></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <span class="timeline-title">Spring 2016 Semester</span>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Graduated with a GPA of 3.55</p>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="timestamp"><span class="time-badge">FEB-2016 / APR-2016</span></div>
+                </li>
+
+                <li class="timeline-inverted">
+                    <div class="timeline-badge main"><i class="fa fa-code"></i></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <span class="timeline-title">BI & ML Project-Suite</span>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Successfully completed a series of mini-projects that deal with a variety of algorithms
+                            used for Data-Guided Business Intelligence.</p>
+                            <p>Relatively larger projects involved were designing a Music Recommender System using Apache
+                            Spark, and a Twitter Sentiment Analyzer and Visualizer using Kafka and MatPlot.</p>
+                            <p>Moreover, relatively complex and difficult to understand projects involved performing Time-Series
+                            analysis, Bayesian Regression on BitCoin currency values, and Word-Vector based learning
+                            and calculations.</p>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="timeline-badge main"><i class="fa fa-code"></i></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <span class="timeline-title">Citizen Science: Sharks</span>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Upgraded the User Experience and functionalities of a website designed for Middle-Schoolers
+                            and children of the age-group.</p>
+                            <p>Conducted stakeholder meetings, and carried out extensive user-testing on both students
+                            and teachers. Compiled results and implemented improvements that led to smiling children
+                            and an insane selfie to summarize the experience.</p>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="timeline-badge main"><i class="fa fa-building"></i></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <span class="timeline-title">Copy Editor, The Technician</span>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Worked as a Copy Editor for <i>The Technician</i>, official Newspaper of NC State University.</p>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="timestamp"><span class="time-badge">DEC-2015</span></div>
+                </li>
+
+                <li class="timeline-inverted">
+                    <div class="timeline-badge main"><i class="fa fa-check"></i></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <span class="timeline-title">Fall 2015 Semester</span>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Graduated with a GPA of 2.89</p>
+                            <p>(Per Aspera, Ad Astra)</p>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="timestamp"><span class="time-badge">SEP-2015 / NOV-2015</span></div>
+                </li>
+
+                <li>
+                    <div class="timeline-badge main"><i class="fa fa-code"></i></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <span class="timeline-title">Sociometer</span>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Designed a simple Python application that uses the Big5 Personality Test to determine
+                            the users' personalities.</p>
+                            <p>It uses the total data to estimate the Social Comfort level of the people present and
+                            accordingly suggests discussion topics or activities everybody can participate in, without
+                            feeling outside their comfort zone.</p>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="timeline-inverted">
+                    <div class="timeline-badge main"><i class="fa fa-code"></i></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <span class="timeline-title">Ink: A social network for Writers</span>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Designed a web application targeted at Writers.</p>
+                            <p>Carried out several iterations of user-testing and relied on feedbacks of several writers
+                            to come up with the best design. Used the GOMS model, Fitts' Law and Keystroke Analysis Model for
+                            designing an efficient interface.</p>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="timeline-badge main"><i class="fa fa-code"></i></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <span class="timeline-title">Social Ringer</span>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Designed a streaming Python application that uses the Twitter Streaming API to listen to
+                            certain calls and respond to them intelligently.</p>
+                            <p>It uses past data to predict current phone ringer volume based on surroundings and the reactions
+                            received by people upon having different ringer volume levels. Past data is set of tweets received
+                            and the data about reactions it contains. Simple perceptron was used to train the ringer-bot.</p>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="timeline-inverted">
+                    <div class="timeline-badge main"><i class="fa fa-code"></i></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <span class="timeline-title">Hunt Library Database</span>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Designed a Database Management System for the services provided by the Hunt Library on campus.</p>
+                            <p>Enabled reservations for rooms, cameras, equipments, and of course, books and journal articles.</p>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="timestamp"><span class="time-badge">AUG-2015</span></div>
+                </li>
+
+                <li>
+                    <div class="timeline-badge main"><i class="fa fa-plane"></i></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <span class="timeline-title">Arrival</span>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Let's learn to stand on our feet.</p>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="timestamp"><span class="time-badge">MAY-2015</span></div>
+                </li>
+
+                <li class="timeline-inverted">
+                    <div class="timeline-badge main"><i class="fa fa-graduation-cap"></i></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <span class="timeline-title">Bachelor's Degree</span>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Graduated with a First Class.</p>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="timestamp"><span class="time-badge">APR-2014 / APR-2015</span></div>
+                </li>
+
+                <li>
+                    <div class="timeline-badge main"><i class="fa fa-code"></i></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <span class="timeline-title">R.A.M.P</span>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Designed a box-office success prediction system for movies produced in Bollywood.</p>
+                            <p>The components involved are the Front-End (a web-based portal displaying current predictions),
+                            a Listener (listens to the Twitter stream and collects most relevant tweets), a Classifier (for
+                            capturing the sentiment of the tweet collected), a Prediction-Engine (which is built on ID3
+                            Algorithm for prediction based on feature values confined to a set).</p>
+                            <p>Also wrote a technical paper describing the system.</p>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="timeline-badge main"><i class="fa fa-code"></i></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <span class="timeline-title">Feed Optimization (QCF)</span>
+                        </div>
+                        <div class="timeline-body">
+                            <p>
+                                Published a paper on IJCA for building a theoretical feed-optimization model, which tries to
+                                rank importance of posts based on the quality of the content, influenced by certain domain-experts'
+                                opinions and the implicit rating collected estimated from the average time spent reading the article.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+
+
+
+
+            </ul>
+        </div>
+    </div>
 
     <div id="contact">
         <h2>Get in Touch</h2>
         <div id="contact-form">
-            <form method="POST" action="https://formspree.io/email@email.com">
+            <form method="POST" action="https://formspree.io/cpancha@ncsu.edu">
                 <input type="hidden" name="_subject" value="Contact request from personal website" />
                 <input type="email" name="_replyto" placeholder="Your email" required>
                 <textarea name="message" placeholder="Your message" required></textarea>
@@ -237,40 +586,62 @@
             <div class="row">
                 <div class="col-sm-5 copyright">
                     <p>
-                        Copyright &copy; 2017 YOUR NAME
+                        Copyright &copy; 2017 Chintan Panchamia
                     </p>
                 </div>
                 <div class="col-sm-2 top">
                     <span id="to-top">
-                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                        <h6>Top</h6>
                     </span>
                 </div>
-                <div class="col-sm-5 social">
+            </div>
+            <div class="row">
+                <div class="social">
                     <ul>
                         <li>
-                            <a href="https://github.com/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                            <a href="https://github.com/chintanpanchamia" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
                         </li>
                         <li>
-                            <a href="https://stackoverflow.com/" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
+                            <a href="https://www.quora.com/profile/Chintan-Panchamia" target="_blank"><i class="fa fa-quora" aria-hidden="true"></i></a>
                         </li>
                         <li>
-                            <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="https://www.facebook.com/chintan.panchamia" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                         </li>
                         <li>
-                            <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="https://twitter.com/chinpanchamia" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                         </li>
                         <li>
-                            <a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                            <a href="https://www.instagram.com/chintanpanchamia" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="http://live.xbox.com/Profile?Gamertag=TheodermalTitan" target="_blank"><i class="fa fa-gamepad" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="http://chinpanz.deviantart.com/" target="_blank"><i class="fa fa-deviantart" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="http://www.linkedin.com/in/chintanpanchamia" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
     </footer>
+
+    <a id="#goingup" href="#lead">
+        <div class="top-button text-center hidden-xs">
+
+            <h3 id="glyph-arrow" class="shift-up inverse-color">
+                <span class="glyphicon glyphicon-triangle-top"></span>
+            </h3>
+        </div>
+    </a>
     <!-- End footer -->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/scripts.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
 </body>
 
 </html>
