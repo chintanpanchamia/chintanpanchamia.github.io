@@ -19,7 +19,7 @@ body {
     font-size: 16px;
 }
 
-.titleStyle {
+.title-style {
     font-family: 'Josefin Sans', sans-serif;
     text-transform: uppercase;
 }
@@ -42,7 +42,7 @@ body.active {
 
 .navbar-default .navbar-nav {
     color: #FFF;
-    font-weight: bold;
+    /*font-weight: bold;*/
     font-size: 1em;
 }
 .navbar-default .navbar-nav:hover, .navbar-default .navbar-nav:focus {
@@ -51,8 +51,9 @@ body.active {
 
 .navbar-default .navbar-nav li a {
     color: #FFF;
-    font-weight: bold;
-    margin: 0 0.25em;
+    font-size: 0.85em;
+    letter-spacing: -0.075em;
+    margin: 0 0.05em;
 }
 
 .navbar-default .navbar-nav li a:hover, .navbar-default .navbar-nav li a:focus {
@@ -185,7 +186,7 @@ footer {
 
 .social ul {
     margin: 0;
-    padding: 5px;
+    padding: 5px 0;
 }
 
 .social li {
@@ -197,7 +198,7 @@ footer {
 .social a {
     display: block;
     color: #74808a;
-    padding: 10px
+    padding-right: 15px;
 }
 
 .social a:hover, .social .nike a:hover, .social .nike a:focus {
@@ -215,7 +216,7 @@ footer {
 .btn-rounded-white {
     display: inline-block;
     color: #fff;
-    font-size: 1.1em;
+    /*font-size: 1.1em;*/
     padding: 15px 15px;
     border: 3px solid #000;
     border-radius: 10px;
@@ -223,12 +224,21 @@ footer {
     transition: .5s ease all;
 }
 
-.btn-rounded-white:hover {
 
+.btn-rounded-white:hover {
     background: #fff;
     color: #000;
-    text-decoration: none;
 
+}
+.btn-rounded-white a {
+    text-decoration: none;
+    font-weight: 400;
+    color: #fff;
+}
+
+.btn-rounded-white:hover a {
+    color: #000;
+    text-decoration: none;
 }
 
 hr {
@@ -267,6 +277,18 @@ hr {
     right: 0;
     margin: 0 auto;
     background: #42A5F5;
+}
+
+#contact > .heading:after {
+    position: absolute;
+    content: '';
+    top: 100%;
+    height: 1px;
+    width: 50px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background: #FFF;
 }
 
 .background-alt {
@@ -338,7 +360,7 @@ hr {
 #lead-content h1 {
     color: #fff;
     font-weight: 400;
-    font-size: 4.25em;
+    font-size: 4.5em;
     text-transform: uppercase;
     letter-spacing: 0.05em;
     line-height: 0.9em
@@ -568,6 +590,15 @@ hr {
     -webkit-border-radius: 10px;
 }
 
+/*.timeline-link {*/
+    /*padding: 0 5px;*/
+/*}*/
+
+.timeline-link i {
+    font-size: 1.5em;
+    padding: 0 5px;
+}
+
 .timestamp {
     text-align: center;
     margin: 10px auto;
@@ -604,6 +635,7 @@ hr {
     color: inherit;
     font-style: italic;
     font-size: 1.5em;
+    padding-right: 5px;
 }
 
 .timeline-heading {
