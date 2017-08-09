@@ -32,7 +32,7 @@ body.active {
 /*NAVBAR CSS*/
 
 .navbar-default {
-    background-color: #FFA000;
+    background-color: #42A5F5;
     border: none;
     height: 70px;
     padding-top: 10px;
@@ -41,28 +41,28 @@ body.active {
 
 
 .navbar-default .navbar-nav {
-    color: #000;
+    color: #FFF;
     font-weight: bold;
     font-size: 1em;
 }
 .navbar-default .navbar-nav:hover, .navbar-default .navbar-nav:focus {
-    color: white;
+    color: #000;
 }
 
 .navbar-default .navbar-nav li a {
-    color: #000;
+    color: #FFF;
     font-weight: bold;
     margin: 0 0.25em;
 }
 
 .navbar-default .navbar-nav li a:hover, .navbar-default .navbar-nav li a:focus {
-    color: white;
-    background-color: black;
+    color: #000;
+    background-color: #fff;
     box-shadow: none;
 }
 .navbar-default .navbar-nav .active a, .navbar-default .navbar-nav .active a:hover, .navbar-default .navbar-nav .active a:focus {
-    color: white;
-    background-color: black;
+    color: #000;
+    background-color: #fff;
     box-shadow: none;
 }
 
@@ -72,7 +72,7 @@ body.active {
     border-radius: 0;
 }
 .navbar-collapse {
-    background: #FFA000;
+    background: #42A5F5;
     border: none;
     box-shadow: none;
 }
@@ -115,7 +115,7 @@ body.active {
     bottom: 0;
     right: 0;
     display: inline-block;
-    background: #FF6F00;
+    background: #42A5F5;
     width: 60px;
     height: 60px;
     border-radius: 30px;
@@ -130,7 +130,7 @@ body.active {
 
 .top-button a {
     text-decoration: none;
-    color: black;
+    color: white;
     margin: auto;
 }
 
@@ -201,7 +201,7 @@ footer {
 }
 
 .social a:hover, .social .nike a:hover, .social .nike a:focus {
-    color: #FFA000;
+    color: #42A5F5;
     text-decoration: none;
 }
 
@@ -215,17 +215,18 @@ footer {
 .btn-rounded-white {
     display: inline-block;
     color: #fff;
-    padding: 15px 25px;
+    font-size: 1.1em;
+    padding: 15px 15px;
     border: 3px solid #000;
-    border-radius: 30px;
+    border-radius: 10px;
     -webkit-transition: .5s ease all;
     transition: .5s ease all;
 }
 
 .btn-rounded-white:hover {
 
-    background: #000;
-    color: #fff;
+    background: #fff;
+    color: #000;
     text-decoration: none;
 
 }
@@ -236,7 +237,7 @@ hr {
     width: 70%;
     border: 0;
     border-top: 1px solid #000;
-    margin: 1.5em auto;
+    margin: 1em auto;
     padding: 0;
 }
 
@@ -265,7 +266,7 @@ hr {
     left: 0;
     right: 0;
     margin: 0 auto;
-    background: #FF6F00;
+    background: #42A5F5;
 }
 
 .background-alt {
@@ -277,7 +278,7 @@ hr {
     height: 100vh;
     min-height: 500px;
     max-height: 1080px;
-    background: #FFA000;
+    background: #42A5F5;
             /*#F44336;*/
     background-size: cover;
     padding: 15px;
@@ -314,7 +315,7 @@ hr {
 
 
 .photo {
-    margin: 2em auto;
+    margin: 1em auto;
     background: url("../images/dp2.jpg") no-repeat;
     background-size: 15vw 15vw;
     background-position: center;
@@ -337,7 +338,7 @@ hr {
 #lead-content h1 {
     color: #fff;
     font-weight: 400;
-    font-size: 5em;
+    font-size: 4.25em;
     text-transform: uppercase;
     letter-spacing: 0.05em;
     line-height: 0.9em
@@ -346,7 +347,7 @@ hr {
 #lead-content h2 {
     color: #fff;
     font-weight: 500;
-    font-size: 2.25em;
+    font-size: 2em;
     text-transform: uppercase;
     margin-bottom: 15px
 }
@@ -393,15 +394,15 @@ hr {
 #lead-down span i {
 
     padding-top: 5px;
-    color: #000;
+    color: #fff;
 }
 
 #lead-down span:hover {
-    background: #000;
+    background: #fff;
 }
 
 #lead-down span:hover i {
-    color: #fff;
+    color: #000;
 }
 
 @-webkit-keyframes pulsate {
@@ -561,7 +562,7 @@ hr {
 
 .time-badge {
     padding: 10px;
-    background: #FFA000;
+    background: #42A5F5;
     color: #000;
     border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -591,7 +592,7 @@ hr {
 }
 
 .timeline-badge.main {
-    background-color: #FFA000 !important;
+    background-color: #42A5F5 !important;
 }
 
 .timeline .timeline-badge.main i {
@@ -753,7 +754,7 @@ hr {
 
 #contact {
     padding: 50px 15px;
-    background: #FFA000;
+    background: #42A5F5;
     text-align: center
 }
 
@@ -775,7 +776,7 @@ hr {
     border-radius: 4px;
     border: none;
     margin-bottom: 10px;
-    background: #FF6F00;
+    background: #1E88E5;
     color: #fff;
     -webkit-transition: .5s ease all;
     transition: .5s ease all
@@ -801,7 +802,7 @@ hr {
 
 #contact-form input:focus, #contact-form textarea:focus {
     outline: none;
-    background: #A54C4C;
+    background: #1976D2;
 }
 
 #contact-form textarea {
@@ -816,7 +817,7 @@ hr {
     border-radius: 4px;
     padding: 5px 10px;
     border: none;
-    color: #FFA000;
+    color: #42A5F5;
     font-weight: 700;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     -webkit-transition: .5s ease all;
@@ -969,8 +970,8 @@ hr {
     }
 
     .top span:hover {
-        background: #FFA000;
-        border-color: #FFA000;
+        background: #42A5F5;
+        border-color: #42A5F5;
     }
 
     .top span:hover h6 {
